@@ -32,6 +32,19 @@
     <p>The iPhone and Mac apps use the Apple Account signed into iCloud on their device. A person using the same invited Apple Account on another supported device should be matched to the same household participant after CloudKit imports the share.</p>
     <p>The Mac app can share its local data files with the Dooos command-line tool on a trusted Mac. Selecting a participant in the Mac app or command-line tool records local attribution; it is not a separate login and does not grant CloudKit access.</p>
 
+    <h2>Using an agent on a Mac</h2>
+    <p>An agent can use Dooos through the Mac app and its local command-line tool on a dedicated or otherwise trusted Mac. There is no special agent account or CloudKit participant type.</p>
+    <ol>
+      <li>Sign the Mac into iCloud with the Apple Account that will be used on that Mac.</li>
+      <li>Install and open the Dooos Mac app.</li>
+      <li>From the household owner's device, invite that Apple Account to the household in the same way as any other member.</li>
+      <li>Accept the iCloud household invitation on the Mac and allow CloudKit to import the shared household.</li>
+      <li>Select the invited household participant whose name should appear on actions made from that Mac. The display name can be edited.</li>
+      <li>Let the agent use the local Dooos command-line tool to read and change lists and tasks.</li>
+    </ol>
+    <p>The Apple Account and accepted CloudKit share provide access. The selected local participant only labels who performed an action; it is not authentication and can be changed by someone with access to the Mac account. Keep the Mac and its user account trusted and secured. Do not give an agent Apple Account credentials or automate Apple Account sign-in.</p>
+    <p>The household owner can end the Mac's CloudKit access by removing that Apple Account from the household share.</p>
+
     <h2>Privacy and backups</h2>
     <p>Dooos has no advertising, analytics, or tracking SDK. Household content is stored locally and in Apple's iCloud infrastructure. Cloud synchronization is not a backup, so Dooos also provides a versioned JSON export and import path for portable backups.</p>
     <p>For more information, read the <a href="../privacy/">Privacy Policy</a>.</p>
