@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Dooos stores, syncs, and shares household lists.">
+  <title>How it works — Dooos</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <p><a href="../">Dooos</a></p>
+    <h1>How it works</h1>
+
+    <h2>On your devices</h2>
+    <p>Dooos keeps a local copy of your household data on each device using Apple's Core Data framework. You can read and change lists while offline. When a network connection is available, changes are sent and received through iCloud. Sync may not be immediate and depends on iCloud availability.</p>
+
+    <h2>CloudKit</h2>
+    <p>Dooos uses Apple's CloudKit service through NSPersistentCloudKitContainer. CloudKit stores and synchronizes the app's records in iCloud. Dooos does not operate a separate account system, application server, or database. Apple operates the iCloud and CloudKit infrastructure.</p>
+
+    <h2>Apple Accounts</h2>
+    <p>The Apple Account signed into iCloud on an iPhone or Mac authenticates that device with CloudKit. Dooos does not ask for a separate username or password. A person's CloudKit identity is matched to their household membership automatically.</p>
+
+    <h2>Creating and joining a household</h2>
+    <p>One person creates a household and becomes its owner. The owner invites other people using Apple's iCloud sharing interface. The invitation is a CloudKit share, also called a CKShare. Installing Dooos does not by itself provide access to someone else's household; the invited Apple Account must also accept the household invitation.</p>
+
+    <h2>One household share</h2>
+    <p>All lists, tasks, sections, comments, household members, and activity belong to one household CloudKit share. The household owner controls membership and can remove participants. A participant can leave the household.</p>
+    <p>“Shared” and “Just me” are organisational settings inside the app. They do not create separate encrypted CloudKit areas. The household owner and members granted full access may be able to see “Just me” data.</p>
+
+    <h2>iPhone and Mac</h2>
+    <p>The iPhone and Mac apps use the Apple Account signed into iCloud on their device. A person using the same invited Apple Account on another supported device should be matched to the same household participant after CloudKit imports the share.</p>
+    <p>The Mac app can share its local data files with the Dooos command-line tool on a trusted Mac. Selecting a participant in the Mac app or command-line tool records local attribution; it is not a separate login and does not grant CloudKit access.</p>
+
+    <h2>Privacy and backups</h2>
+    <p>Dooos has no advertising, analytics, or tracking SDK. Household content is stored locally and in Apple's iCloud infrastructure. Cloud synchronization is not a backup, so Dooos also provides a versioned JSON export and import path for portable backups.</p>
+    <p>For more information, read the <a href="../privacy/">Privacy Policy</a>.</p>
+
+    <h2>Support</h2>
+    <p>For help with installation, invitations, or syncing, use the <a href="../support/">Support page</a>.</p>
+  </main>
+</body>
+</html>
