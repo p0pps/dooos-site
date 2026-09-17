@@ -4,6 +4,15 @@
         <title>Dooos</title>
         <item>
             <title>0.1.0</title>
+            <pubDate>Thu, 17 Sep 2026 15:16:58 -0400</pubDate>
+            <link>https://p0pps.github.io/dooos-site/download/</link>
+            <sparkle:version>96</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/p0pps/dooos-site/releases/download/mac-v0.1.0-96/Dooos-0.1.0-96.zip" length="10055613" type="application/octet-stream" sparkle:edSignature="gC3GiuQPwhP1c1APDRtY+1uOYcNZwaWqOyg+N1b+PX6PwC9OdRgyObtROJbxrjinJGKZedbeJY36AXREveb3DQ=="/>
+        </item>
+        <item>
+            <title>0.1.0</title>
             <pubDate>Tue, 15 Sep 2026 01:03:19 -0400</pubDate>
             <link>https://p0pps.github.io/dooos-site/download/</link>
             <sparkle:version>91</sparkle:version>
